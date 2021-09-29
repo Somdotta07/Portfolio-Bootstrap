@@ -158,40 +158,39 @@
 
         </div>
     </section>
-    <section id="form" class="container">
+    <section id="form" class="d-flex flex-column align-items-center">
+        <img class="bg-img" src="/images/image-geometry_6.png" alt="...">
       <article>
         <h2>Get Started</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
          exercitation ullamco laboris nisi ut aliquip ea eiusmod</p>
-      </article>
-      <form action="">
-        <div class="mb-3">
+      
+      <form  class="mb-3" action="https://formspree.io/f/xoqybvkp">
+        
           <label for="input1" class="form-label">Name</label>
-          <input type="name" class="form-control" id="input1" placeholder="name">
-        </div>
-        <div class="mb-3">
+          <input type="name" class="form-control" id="input1" placeholder="name" required>
           <label for="input2" class="form-label">Your email</label>
-          <input type="email" class="form-control" id="input2" placeholder="name@example.com">
-        </div>
-        <div class="mb-3">
+          <input type="email" class="form-control" id="input2" placeholder="name@example.com"  required>
+        
           <label for="Textarea" class="form-label">Message</label>
-          <textarea class="form-control" id="Textarea" rows="30" maxlength="500" placeholder="Enter your message here"></textarea>
-        </div>
+          <textarea class="form-control" id="Textarea" rows="30" maxlength="500" placeholder="Enter your message here"  required></textarea>
+        
       </form>
+    </article>
       <button class="btn btn-primary" type="button">Start collaboration</button>
     </section>
-    <footer id="footer">
+    <footer id="footer" class="d-flex justify-content-between px-5 py-5 bg-dark">
       <div>
-        <a class="btn btn-primary">Start collaboration<i class="fas fa-download"></i></a>
+        <a class="btn btn-dark text-info ms-5">Get my CV<i class="fas fa-download"></i></a>
       </div>
       <div>
-        <a href="" class=""><i class="fab fa-stack-overflow"></i></a>
-        <a href=""><i class="fab fa-github"></i></a>
-        <a href=""><i class="fab fa-twitter"></i></a>
-        <a href=""><i class="fab fa-medium"></i></a>
-        <a href=""><i class="fab fa-linkedin-in"></i></a>
-        <a href=""><i class="fab fa-angellist"></i></a>
+        <a href="" class="px-2 fs-4 text-light"><i class="fab fa-stack-overflow"></i></a>
+        <a href="" class="px-2 fs-4 text-light"><i class="fab fa-github"></i></a>
+        <a href="" class="px-2 fs-4 text-light"><i class="fab fa-twitter"></i></a>
+        <a href="" class="px-2 fs-4 text-light"><i class="fab fa-medium"></i></a>
+        <a href="" class="px-2 fs-4 text-light"><i class="fab fa-linkedin-in"></i></a>
+        <a href="" class="px-2 fs-4 text-light me-5"><i class="fab fa-angellist"></i></a>
       </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
