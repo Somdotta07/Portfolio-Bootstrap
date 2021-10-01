@@ -8,7 +8,7 @@
     <title>Our Portfolio</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
   </head>
-  <body>
+  <body class="container my-0>
     <nav class="navbar navbar-expand-lg bg-light">
       <div class="container justify-content-center">
         <ul class="nav justify-content-center">
@@ -30,28 +30,35 @@
         </ul>        
       </div>       
     </nav>
-    <section id="main" class="container">
+    <section id="main" class="container pb-5">
       <div class="row">      
-        <div class="col-sm-5 my-5">
+        <div class="col-6 my-5  position-relative">
           <h1 class=" display-1 pt-5">Gints & Somdotta</h1>
           <p class="pt-5">Hello! I am a software developer! I can help you build a product, feature or website. Taka a look of my works.
             If you like what you see and have a project you need coded, don’t hesitate and contact me.
           </p>
-          <button class="btn btn-primary my-5" type="button">Start collaboration</button></div>
-          <div class="col-sm-2 align-self-end"> 
+          <button class="btn btn-primary my-5" type="button">Start collaboration</button>
+          <div class="position-absolute bottom-0 end-0"> 
             <img src="images/image_dots.png" class= "p-0" alt="">
           </div>
+        </div>
+             
           
-          <div class="col-sm-5"> 
-            <img src="images/image-geometry_1.png" alt="">
+          <div class="col-6"> 
+            <img class="img-fluid" src="images/image-geometry_1.png" alt="">
           </div>
         </div>
-
     </section>
-
     <!-- Change from here -->
-
-    <div class="col-sm-1 col-lg-9">
+    <section id="project" class="container mt-5">
+      <div class="row">
+        <!-- elm_vert -->
+        <div class="col-sm-1 col-lg-3">
+          <h2>Projects</h2>
+            <img src="images/image_dots.png" alt="">
+        </div>
+          <!--elm 9col overlay  -->
+        <div class="col-sm-1 col-lg-9">
           <div class="">
             <img class="img-fluid" src="images/card1.png" alt="">
            </div>
@@ -65,38 +72,92 @@
              <button class="btn btn-light border-dark border-2 mt-3 fs-5" type="button">See this projects <span>→</span></button>
            </div>
         </div>
+      </div>
 
         <!-- work on cards 2 and 3 -->
-        <div class="row">
-          <!-- card 2 -->
-          <div class="col-6 row">
-            <div class="col-6">
-              <div class="">
-                <img class="img-fluid" src="images/card2.png" alt="">
-               </div>
-               <div class="p-5 bg-dark">
-                 <h3 class="text-light">Project name goes here and there</h3>
-                 <div class="d-flex py-3">
-                  <p class="btn btn-info me-2">HTML/CSS</p>
-                  <p class="btn btn-info me-2">Ruby on Rails<p>
-                  <p class="btn btn-info me-2">JavaScript<p>              
-                 </div>
-                 <button class="btn btn-light border-dark border-2 mt-3 fs-5" type="button">See this projects <span>→</span></button>
-               </div>
+      <div class="row">
+        <!-- card 2 -->
+        <div class="col-6 row">
+          <div class="col-8">
+            <div class="">
+              <img class="img-fluid" src="images/card2.png" alt="">
             </div>
-            <div class="col-6">
-              <img class="img-fluid" src="images/image_dots.png" alt="">
-            </div>          
-             
+            <div class="p-5 bg-dark d-none">
+              <h3 class="text-light">Project name goes here and there2</h3>
+              <div class="d-flex py-3">
+               <p class="btn btn-info me-2">HTML/CSS</p>
+               <p class="btn btn-info me-2">Ruby on Rails<p>
+               <p class="btn btn-info me-2">JavaScript<p>              
+              </div>
+              <button class="btn btn-light border-dark border-2 mt-3 fs-5" type="button">See this projects <span>→</span></button>
+            </div>
           </div>
-  
-          <!-- work on this3 -->
-          <div class="col-6">
+          <div class="col-4">
+            <img class="img-fluid" src="images/image_dots.png" alt="">
+          </div>
+          <!-- end C2 -->
+          <!-- st C4 -->
+          <div class="col-12">
             <div class="">
               <img class="img-fluid" src="images/card3.png" alt="">
+            </div>
+            <div class="p-5 bg-dark d-none">
+              <h3 class="text-light">Project name goes here and there4</h3>
+              <div class="d-flex py-3">
+               <p class="btn btn-info me-2">HTML/CSS</p>
+               <p class="btn btn-info me-2">Ruby on Rails<p>
+               <p class="btn btn-info me-2">JavaScript<p>              
+              </div>
+              <button class="btn btn-light border-dark border-2 mt-3 fs-5" type="button">See this projects <span>→</span></button>
+            </div>
+          </div>
+        </div>  
+  
+          <!-- work on this3 -->
+        <div class="col-6">
+          <div>
+            <!-- <img class="card-img-overlay" src="images/image-geometry_2.png" alt=""> -->
+            <img class="float-end" src="images/card4.png" alt="">
+           </div>
+           <div class="p-5 bg-dark d-none">
+             <h3 class="text-light">Project name goes here and there3</h3>
+             <div class="d-flex py-3">
+              <p class="btn btn-info me-2">HTML/CSS</p>
+              <p class="btn btn-info me-2">Ruby on Rails<p>
+              <p class="btn btn-info me-2">JavaScript<p>              
              </div>
-             <div class="p-5 bg-dark">
-               <h3 class="text-light">Project name goes here and there</h3>
+             <button class="btn btn-light border-dark border-2 mt-3 fs-5" type="button">See this projects <span>→</span></button>
+           </div>
+           <!-- backgr C3 -->
+           <div class="col-12">
+            <img class="rounded float-end" src="images/image-geometry_3.png" alt="">
+           </div>
+        </div>
+      </div>
+        
+
+        <!-- work on this4 -->
+        
+
+        <!-- work on this5 -->
+        <div class="container">
+          <div class="row">
+            <div class="col-6 container">
+              <div class="row">
+                <div class="col align-self-start">
+                  <img class="d-block" src="images/image-geometry_5.png" alt="">
+                </div>
+                <div class="col align-self-end position-relative">
+                  <img class="position-absolute bottom-0 end-0" src="images/image-geometry_4.png" alt="">
+                </div>         
+              </div>
+              
+            </div>
+            <div class="col-6">
+              <img class="img-fluid" src="images/card5.png" alt="">
+             </div>
+             <div class="p-5 bg-dark d-none">
+               <h3 class="text-light">Project name goes here and there5</h3>
                <div class="d-flex py-3">
                 <p class="btn btn-info me-2">HTML/CSS</p>
                 <p class="btn btn-info me-2">Ruby on Rails<p>
@@ -105,47 +166,14 @@
                <button class="btn btn-light border-dark border-2 mt-3 fs-5" type="button">See this projects <span>→</span></button>
              </div>
           </div>
-
-        </div>
-        
-
-        <!-- work on this4 -->
-        <div class="col-sm-1 col-lg-9">
-          <div class="">
-            <img class="img-fluid" src="images/card4.png" alt="">
-           </div>
-           <div class="p-5 bg-dark">
-             <h3 class="text-light">Project name goes here and there</h3>
-             <div class="d-flex py-3">
-              <p class="btn btn-info me-2">HTML/CSS</p>
-              <p class="btn btn-info me-2">Ruby on Rails<p>
-              <p class="btn btn-info me-2">JavaScript<p>              
-             </div>
-             <button class="btn btn-light border-dark border-2 mt-3 fs-5" type="button">See this projects <span>→</span></button>
-           </div>
-        </div>
-
-        <!-- work on this5 -->
-        <div class="col-sm-1 col-lg-9">
-          <div class="">
-            <img class="img-fluid" src="images/card5.png" alt="">
-           </div>
-           <div class="p-5 bg-dark">
-             <h3 class="text-light">Project name goes here and there</h3>
-             <div class="d-flex py-3">
-              <p class="btn btn-info me-2">HTML/CSS</p>
-              <p class="btn btn-info me-2">Ruby on Rails<p>
-              <p class="btn btn-info me-2">JavaScript<p>              
-             </div>
-             <button class="btn btn-light border-dark border-2 mt-3 fs-5" type="button">See this projects <span>→</span></button>
-           </div>
+           
         </div>  
       </div>
     </section>
    <!-- to here -->
 
   <!-- About  -->
-    <section id="about" class="">
+    <section id="about" class="container">
       <div class="row ms-10">
         <div class="col">
           <div class="row justify-content-center  m-5">
@@ -195,7 +223,7 @@
         </div>
     </section>
     <!-- Form -->
-    <section id="form" class="container-fluid">
+    <section id="form" class="container">
       <div class="row">
         <div class="col-sm-3">
            <img class="bg-img" src="/images/image-geometry_6.png" alt="...">
