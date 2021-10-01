@@ -8,7 +8,7 @@
     <title>Our Portfolio</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
   </head>
-  <body class="container my-0>
+  <body class="container">
     <nav class="navbar navbar-expand-lg bg-light">
       <div class="container justify-content-center">
         <ul class="nav justify-content-center">
@@ -50,31 +50,55 @@
         </div>
     </section>
     <!-- Change from here -->
-    <section id="project" class="container mt-5">
+    <section id="project" class="container py-5">
       <div class="row">
         <!-- elm_vert -->
-        <div class="col-sm-1 col-lg-3">
+        <div class="col-lg-3">
           <h2>Projects</h2>
-            <img src="images/image_dots.png" alt="">
+          <img src="images/image_dots.png" alt="">
         </div>
           <!--elm 9col overlay  -->
-        <div class="col-sm-1 col-lg-9">
-          <div class="">
+        <div class="col-lg-9  position-relative">
+          <div class="container">
             <img class="img-fluid" src="images/card1.png" alt="">
-           </div>
-           <div class="p-5 bg-dark">
-             <h3 class="text-light">Project name goes here and there</h3>
-             <div class="d-flex py-3">
-              <p class="btn btn-info me-2">HTML/CSS</p>
-              <p class="btn btn-info me-2">Ruby on Rails<p>
-              <p class="btn btn-info me-2">JavaScript<p>              
-             </div>
-             <button class="btn btn-light border-dark border-2 mt-3 fs-5" type="button">See this projects <span>→</span></button>
-           </div>
+          </div>
+          <div class="p-5 bg-dark position-absolute mx-3 bottom-0">
+            <h3 class="text-light">Project name goes here and there</h3>
+            <div class="d-flex py-3">
+             <p class="btn btn-info me-2">HTML/CSS</p>
+             <p class="btn btn-info me-2">Ruby on Rails<p>
+             <p class="btn btn-info me-2">JavaScript<p>              
+            </div>
+            <!--  class="btn btn-light border-dark border-2 mt-3 fs-5" type="button" -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+              See this projects <span>→</span>
+            </button>
+              <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>Tramtaratatarram I'm a only modal of this page :) </p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Understood</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- module end -->
+          </div>
         </div>
       </div>
+      <!-- up to here -->
 
-        <!-- work on cards 2 and 3 -->
+              <!-- work on cards 2 and 3 -->
       <div class="row">
         <!-- card 2 -->
         <div class="col-6 row">
@@ -174,7 +198,7 @@
 
   <!-- About  -->
     <section id="about" class="container">
-      <div class="row ms-10">
+      <div class="row ">
         <div class="col">
           <div class="row justify-content-center  m-5">
             <div class="col-3 badge bg-primary">
@@ -223,7 +247,7 @@
         </div>
     </section>
     <!-- Form -->
-    <section id="form" class="container">
+    <section id="form" class="container position-relative">
       <div class="row">
         <div class="col-sm-3">
            <img class="bg-img" src="/images/image-geometry_6.png" alt="...">
@@ -250,13 +274,16 @@
             <textarea class="form-control" id="Textarea" rows="10" maxlength="500" placeholder="Enter your message here"  required></textarea>
           
             </div>
-        </div>
+          </div>
         </form>
-      <button class="btn btn-primary my-5" type="button">Start collaboration</button>
-    </div>
-        <div class="col-sm-3 align-self-end "> <img class="bg-img" src="/images/image-geometry_7.png" alt="..."></div>
+        <button class="btn btn-primary my-5" type="button">Start collaboration</button>
+      </div>
+        <div class="col-sm-3 ">
+          <div>
+            <img class="position-absolute bg-img bottom-0 end-0" src="/images/image-geometry_7.png" alt="...">
+          </div>          
+        </div>
 
-      </div> 
         
     </section>
     <!-- Footer -->
